@@ -1,4 +1,4 @@
- # Geo-Note
+ # Geo-Note 🌍
  Taking notes on locations based on geographic coordinates.
 
  # Sources
@@ -6,4 +6,3 @@
  - CSS
  - HTML 
 
- 
