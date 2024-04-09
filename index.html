@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4405/4405444.png">
+    <title>Geo Note</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- not menü -->
+    <div class="notes">
+            <aside>
+                <div class="heading">
+                    <h2>
+                        <span>Notlar</span>
+                    </h2>
+                    <i id="visibility" class="bi bi-x-lg"></i>
+                </div>
+                <hr>
+                <form>
+                    <div>
+                        <label>Not</label>
+                        <input required placeholder="Örn. Okul" type="text">
+                    </div>
+                    <div>
+                        <label>Tarih</label>
+                        <input required type="date">
+                    </div>
+                    <div>
+                        <label>Not Konumu</label>
+                        <select>
+                            <option value="Ev">Ev</option>
+                            <option value="Okul">Okul</option>
+                            <option value="İş">İş</option>
+                            <option value="Kafe">Kafe</option>
+                            <option value="Otopark">Otopark</option>
+                            <option value="Ziyaret">Ziyaret</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <button type="button">İptal</button>
+                        <button type="submit">Ekle</button>
+                    </div>
+                </form>
+    
+                <!-- not listesi -->
+                <ul>
+                    <!--  -->
+                </ul>
+            </aside>
+    </div>
+    <div id="map"></div>
+
+    <!-- Leaflet Script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- JS -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

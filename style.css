@@ -1,0 +1,166 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+}
+
+#map {
+  height: 100vh;
+  z-index: 10;
+}
+
+.notes{
+    display: flex;
+    align-items: start;
+    margin-top: 60px;
+    position: fixed;
+    z-index: 99;
+    left: 50px;
+    height: 100vh;
+}
+
+aside{
+    background: #242424d3;
+    color: white;
+    height: 600px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+aside h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+aside i {
+    font-size: 20px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form select{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+form .buttons{
+    flex-direction: row;
+}
+
+form .buttons button{
+    flex: 1;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form .buttons button:hover{
+    scale: 0.95;
+    transition: .5s;
+    background-color: rgb(81, 205, 50);
+}
+
+form .buttons button:hover:nth-child(1){
+    background-color: crimson;
+}
+
+/* listeleme alanı */
+
+ul{
+    height: 100%;
+    margin-top: 20px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: auto;
+}
+
+ul::-webkit-scrollbar{
+    background: transparent;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 7px;
+    align-items: center;
+}
+
+ul li p:first-child{
+    font-style: italic;
+    font-size: 17px;
+}
+
+ul li p span:first-child{
+    font-weight: bold;
+}
+
+ul li .icons{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.visibility{
+    height: 10%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#visibility{
+    padding: 3px;
+    animation: mymove 5s infinite;
+}
+
+#visibility:hover{
+    background-color: #ffffff46;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#fly{
+    color: gray;
+}
+
+#delete{
+    color: rgb(251, 81, 81);
+}
+
+@keyframes mymove {
+ 50% {transform: rotate(90deg);}
+  }
